@@ -43,20 +43,19 @@ main {
     padding: 0 20px;
 }
 
-.welcome-card, .portal-box {
+.portal-box {
     background: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.welcome-card h1, h2 {
+h2, h3 {
     color: #005f73;
     margin-bottom: 15px;
 }
 
-/* Forms and Inputs */
 .form-group {
     margin-bottom: 15px;
 }
@@ -74,7 +73,7 @@ main {
     border-radius: 4px;
 }
 
-button.btn {
+.btn {
     padding: 10px 20px;
     background: #005f73;
     color: white;
@@ -84,31 +83,44 @@ button.btn {
     font-weight: bold;
 }
 
-button.btn:hover {
-    background: #0a9396;
+.btn:hover { background: #0a9396; }
+
+.btn-small {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
 
-/* Tables styling */
+.btn-checkin { background-color: #e9d8a6; color: #333; }
+.btn-complete { background-color: #94d2bd; color: #333; }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+table, th, td { border: 1px solid #ddd; }
+th, td { padding: 12px; text-align: left; }
+th { background-color: #005f73; color: white; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+
+/* Grid Layout systems for dashboard panels */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-th, td {
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #005f73;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+/* Printable Invoice Slip Box */
+.invoice-print-box {
+    border: 2px dashed #005f73;
+    padding: 20px;
+    background: #fdfdfd;
+    margin-top: 20px;
+    border-radius: 5px;
 }

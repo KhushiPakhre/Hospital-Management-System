@@ -8,23 +8,17 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <header>
         <h2>🏥 CarePulse Hospital</h2>
-        <nav>
+        <nav id="header-nav" style="display: none;">
             <button onclick="showDashboard('admin')">Admin Portal</button>
             <button onclick="showDashboard('doctor')">Doctor Portal</button>
             <button onclick="showDashboard('patient')">Patient Portal</button>
+            <button onclick="logOut()" style="border-color:#ae2012; background:#ae2012;">Logout</button>
         </nav>
     </header>
 
-    <!-- Main Content Dynamic Container -->
-    <main id="main-content">
-        <div class="welcome-card">
-            <h1>Welcome to the Hospital Management System</h1>
-            <p>Select a portal from the navigation menu above to manage patients, doctors, and appointments.</p>
-        </div>
-    </main>
+    <main id="main-content"></main>
 
     <script src="app.js"></script>
 </body>
